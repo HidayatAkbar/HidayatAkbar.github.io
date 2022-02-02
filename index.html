@@ -1,0 +1,63 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+    <center><img src="bmw m wallpaper.jpg" height="40%" width="100%"></center>
+<div class="w3-container">
+<h1>BMW M SERIES</h1>
+<p>List BMW M Series</p>
+</div>
+<div class="w3-bar w3-black">
+<button class="w3-bar-item w3-button" onclick="mobil('profile')">Profile</button>
+<button class="w3-bar-item w3-button" onclick="mobil('M3')">BMW M3</button>
+<button class="w3-bar-item w3-button" onclick="mobil('M4')">BMW M4</button>
+<button class="w3-bar-item w3-button" onclick="mobil('M5')">BMW M5</button>
+<button class="w3-bar-item w3-button" onclick="mobil('M6')">BMW M6</button>
+<button class="w3-bar-item w3-button" onclick="mobil('M8')">BMW M8</button>
+
+<div id="profile" class="w3-container mobil" style="display:none">
+    <h2>NIM : 10121057<br>
+        NAMA : MUHAMMAD HIDAYAT AKBAR<br>
+        KELAS : IF2
+    </h2>
+    </div>
+</div>
+<div id="M3" class="w3-container mobil" style="display:none">
+    <h2>BMW M3</h2>
+    <div class="w3-container ">
+        <img class="w3 container w3-animate-fading" src="m3.jpg"style="width:50%;"></div>
+</div>
+<div id="M4" class="w3-container mobil" style="display:none">
+    <h2>BMW M4</h2>
+    <div class="w3-container w3-animate-bottom">
+        <img class="w3 container w3-animate-bottom" src="m4.jpg"style="width:50%;"></div>
+</div>
+<div id="M5" class="w3-container mobil" style="display:none">
+    <h2>BMW M5</h2>
+    <div class="w3-container ">
+        <img class="w3 container w3-animate-top" src="m5.jpg"style="width:50%;"></div>
+</div>
+<div id="M6" class="w3-container mobil" style="display:none">
+    <h2>BMW M6</h2>
+    <div class="w3-container ">
+        <img class="w3 container w3-animate-zoom" src="m6.jpg"style="width:50%;">
+    </div>
+</div>
+<div id="M8" class="w3-container mobil" style="display:none">
+    <h2>BMW M8</h2>
+    <div class="w3-container w3-animate-right">
+        <img class="w3-animate-right w3" src="m8.jpg" style="width:45%; height:50%;"></div>
+</div>
+<script>
+function mobil(namamobil) {
+ var i;
+ var x = document.getElementsByClassName("mobil");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namamobil).style.display = "block";
+}
+</script>
+</body>
+</html>
